@@ -1,0 +1,25 @@
+package com.example.todoList.todolist.entity;
+
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+public class TodoEntity {
+
+	@EntityScan
+	@Table(name = "todos")
+	public class Todo {
+		@Id
+		@GeneratedValue(strategy = GenerationType.IDENTITY)
+		private Long id;
+		private String title;
+		private String description;
+		private boolean completed;
+
+		// Constructor, getters, setters
+	}
+
+}

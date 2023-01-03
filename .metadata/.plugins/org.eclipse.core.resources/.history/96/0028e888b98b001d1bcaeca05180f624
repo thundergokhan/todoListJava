@@ -1,0 +1,27 @@
+package com.example.todoList.todolist.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.todo.entity.Todo;
+import com.example.todo.repository.TodoRepository;
+
+@Service
+public class TodoService {
+	private final TodoRepository todoRepository;
+
+	@Autowired
+	public TodoService(TodoRepository todoRepository) {
+		this.todoRepository = todoRepository;
+	}
+
+	public List<Todo> getAllTodos() {
+		return todoRepository.findAll();
+	}
+
+	public Todo addTodo(Todo todo) {
+		return todoRepository.save(todo);
+	}
+
+	// Diğer iş logikleri için benzer metodlar oluşturun
+}

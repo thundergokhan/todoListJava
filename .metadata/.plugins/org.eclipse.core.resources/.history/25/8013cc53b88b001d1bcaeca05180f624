@@ -1,0 +1,10 @@
+package com.example.todoList.todolist.service;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.example.todo.entity.Todo;
+
+@Repository
+public interface TodoRepository extends JpaRepository<Todo, Long> {
+    // JPA metodlarını kullanarak veritabanındaki Todo nesnelerine erişebilecek metodlar burada tanımlanır.
+}
