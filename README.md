@@ -1,9 +1,9 @@
 # todoListJava
  Todo List Java Spring
-
+<hr>
 Todo uygulaması
 Bu uygulama, kullanıcıların günlük yapacaklarını takip etmelerine yardımcı olan bir Todo listesi uygulamasıdır. Kullanıcılar, yapacaklarını ekleyebilir, düzenleyebilir ve tamamlanan görevleri silme işlemini gerçekleştirebilirler.
-
+</hr>
 Kurulum
 Öncelikle, bu uygulamayı çalıştırmak için Java ve Spring Boot kurulu bir bilgisayara ihtiyacınız olacak.
 
