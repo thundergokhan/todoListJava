@@ -1,0 +1,87 @@
+body {
+  font-family: sans-serif;
+}
+
+#app {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#todo-form {
+  display: flex;
+  align-items: center;
+}
+
+#todo-input {
+  flex-grow: 1;
+  font-size: 16px;
+  border: none;
+  padding: 10px;
+  outline: none;
+}
+
+#todo-list {
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+}
+
+#todo-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#todo-list li.completed {
+  background-color: #e8f0fe;
+  color: #bbb;
+  text-decoration: line-through;
+}
+
+#todo-list li button {
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#todo-list li button:hover {
+  color: #ff5151;
+}
+
+#todo-list li button.edit {
+  margin-right: 10px;
+}
+
+#todo-list li button.delete {
+  color: #ff5151;
+}
+
+#todo-list li button.save,
+#todo-list li button.cancel {
+  display: none;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+#todo-list li.editing {
+  background-color: #f9f9f9;
+}
+
+#todo-list li.editing input {
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+
+#todo-list li.editing button.save,
+#todo-list li.editing button.cancel {
+  display: inline-block;
+}
