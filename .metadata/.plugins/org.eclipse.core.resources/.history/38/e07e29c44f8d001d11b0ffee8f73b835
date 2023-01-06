@@ -1,0 +1,13 @@
+package com.example.todoList.todolist.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import com.example.todoList.todolist.entity.TodoEntity.Todo;
+
+public interface JpaTodoRepository extends JpaRepository<Todo, Long> {
+	// Buraya JPA metodlarını kullanarak veritabanındaki Todo nesnelerine
+	// erişebilecek metodları tanımlayabilirsiniz. Örneğin:
+	// List<Todo> findAll();
+	// void deleteById(Long id);
+	// Todo save(Todo todo);
+	// Optional<Todo> findById(Long id);
+}

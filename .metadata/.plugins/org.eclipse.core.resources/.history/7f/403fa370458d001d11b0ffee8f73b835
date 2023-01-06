@@ -1,0 +1,26 @@
+package com.example.todoList.todolist.repository;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import com.example.todoList.todolist.entity.TodoEntity.Todo;
+
+@Repository
+public interface TodoRepository extends CrudRepository<Todo, Long> {
+	// JPA metodlarını kullanarak veritabanındaki Todo nesnelerine erişebilecek
+	// metodlar burada tanımlanır.
+	List<Todo> findAll();
+
+	void deleteById(Long id);
+
+	void deleteAll();
+
+	Todo save(Todo todo);
+
+	@Override
+
+	Optional<Todo> findById(Long id);
+}

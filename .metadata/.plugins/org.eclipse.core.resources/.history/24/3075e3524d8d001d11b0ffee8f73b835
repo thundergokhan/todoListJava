@@ -1,0 +1,19 @@
+package com.example.todoList.todolist.config;
+
+import javax.persistence.EntityManager;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.example.todoList.todolist.repository.JpaTodoRepository;
+import com.example.todoList.todolist.repository.TodoRepository;
+
+@Configuration
+public class AppConfig {
+
+	@Bean
+	public TodoRepository todoRepository() {
+		return new JpaTodoRepository();
+		
+	}
+}
