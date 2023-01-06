@@ -1,0 +1,27 @@
+package com.example.todoList.todolist.repository;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.boot.autoconfigure.security.SecurityProperties.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.example.todoList.todolist.entity.TodoEntity.Todo;
+
+@Repository
+public interface TodoRepository extends JpaRepository<User, Integer> {
+	// JPA metodlarını kullanarak veritabanındaki Todo nesnelerine erişebilecek
+	// metodlar burada tanımlanır.
+
+	@Override
+	List<User> findAll();
+
+	void deleteById(Long id);
+
+	void deleteAll();
+
+	Todo save(Todo todo);
+
+	Optional<Todo> findById(Long id);
+}
