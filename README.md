@@ -24,3 +24,7 @@ Uygulamayı çalıştırmak için aşağıdaki adımları izleyin:
 9. Görevi silmek için görev adının yanındaki çöp kutusuna tıklayın.
 10. Tüm görevleri silmek için "Delete All" düğmesine tıklayın.
 
+## Lisans
+
+
+Proje MIT Lisansı altında lisanslıdır. Detaylar için [LICENSE](LICENSE) 
