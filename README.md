@@ -1,48 +1,26 @@
-# todoListJava
- Todo List Java Spring
-<hr>
-Todo uygulaması
-Bu uygulama, kullanıcıların günlük yapacaklarını takip etmelerine yardımcı olan bir Todo listesi uygulamasıdır. Kullanıcılar, yapacaklarını ekleyebilir, düzenleyebilir ve tamamlanan görevleri silme işlemini gerçekleştirebilirler.
-</hr>
-Kurulum
-Öncelikle, bu uygulamayı çalıştırmak için Java ve Spring Boot kurulu bir bilgisayara ihtiyacınız olacak.
+# Todo List Spring Boot Uygulaması
 
-Uygulamayı indirin ve bir kod editörüyle açın.
+Bu, bir Spring Boot uygulaması olarak geliştirilen bir Todo List uygulamasıdır. Uygulama, veritabanından veri okuma, veri ekleme, veri güncelleme ve veri silme gibi işlemleri yaparak kullanıcılara todo görevlerini yönetme imkanı verir.
 
-Veritabanı bağlantısı için, projenin "src/main/resources/application.properties" dosyasındaki "spring.datasource.username" ve "spring.datasource.password" değişkenlerini kendi MySQL kullanıcı adınız ve şifrenizle değiştirin.
+## Önkoşullar
 
-Proje kök dizininde, "mvn spring-boot:run" komutunu çalıştırarak uygulamayı çalıştırın.
+Uygulamayı çalıştırabilmek için aşağıdaki yazılımların yüklü olması gerekir:
 
-Uygulama, varsayılan olarak "http://localhost:8080" adresinde çalışmaya başlayacaktır.
+- Java 8 veya üstü
+- Apache Maven
 
-Kullanım
-Uygulamaya giriş yaptıktan sonra, aşağıdaki işlemleri gerçekleştirebilirsiniz:
+## Nasıl Çalıştırılır?
 
-Yapılacaklar listesine yeni bir görev eklemek için, "Yeni görev ekle" butonuna tıklayın ve görev açıklamasını yazın.
+Uygulamayı çalıştırmak için aşağıdaki adımları izleyin:
 
-Bir görevi düzenlemek için, o görevin yanındaki "Düzenle" butonuna tıklayın ve görev açıklamasını güncelleyin.
+1. Projeyi bilgisayarınıza indirin ve bir komut istemi penceresi açın.
+2. Projenin olduğu dizine gidin.
+3. `mvn package` komutunu çalıştırın. Bu komut, projeyi derleyip bir jar dosyası oluşturacaktır.
+4. `java -jar target/todo-list-0.0.1-SNAPSHOT.jar` komutunu çalıştırın. Bu komut, uygulam projeyi başlatacaktır.
+5. Uygulama, varsayılan olarak `http://localhost:8080` adresinde çalışmaya başlayacaktır. Bu adresi web tarayıcınızın adres çubuğuna yazıp uygulamayı açabilirsiniz.
+6. Uygulamada, yeni bir todo görevi eklemek için "Add a todo" yazısının yanındaki boş alana görev adını yazın ve "Add" düğmesine tıklayın.
+7. Eklenen todo görevi, görevler listesinin altında görüntülenecektir.
+8. Görevi tamamlamak için görev adının yanındaki onay kutusuna tıklayın. Tamamlanan görev, liste içinde mavi renkte görüntülenecektir.
+9. Görevi silmek için görev adının yanındaki çöp kutusuna tıklayın.
+10. Tüm görevleri silmek için "Delete All" düğmesine tıklayın.
 
-Bir görevi tamamlamak için, o görevin yanındaki "Tamamla" kutusunu işaretleyin. Tamamlanan görevler, yapılacaklar listesinin altında "Tamamlanan görevler" başlığı altında gösterilecektir.
-
-Tamamlanan bir görevi silmek için,o tamamlanan görevin yanındaki "Sil" butonuna tıklayın.
-
-Özellikler
-Kullanıcıların günlük yapacaklarını takip etmelerine yardımcı olan bir Todo listesi.
-Yapılacaklar listesine yeni görevler ekleyebilme.
-Görevleri düzenleyebilme ve tamamlanan görevleri silme.
-Ekran Görüntüleri
-Ana ekran:
-
-Ana ekran
-
-Yeni görev ekleme ekranı:
-
-Yeni görev ekleme ekranı
-
-Görev düzenleme ekranı:
-
-Görev düzenleme ekranı
-
-Tamamlanan görevler:
-
-Tamamlanan görevler:
